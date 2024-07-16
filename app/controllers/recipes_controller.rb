@@ -1,7 +1,7 @@
 class RecipesController < ApplicationController
   def show
-    binding.pry
     @recipe = Recipe.find(params[:id])
-    @recipe_ingredients = RecipeIngredient.where(recipe_id: :id)
+    @recipe_ingredients = RecipeIngredient.find_recipe_ingredients(params[:id])
+    binding.pry
   end
 end
