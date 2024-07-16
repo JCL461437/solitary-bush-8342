@@ -11,10 +11,10 @@ RSpec.describe 'ingredients index' do
     @recipe1 = Recipe.create!(name: "Chicken Breast", complexity: 1, genre: "Meat")
     @recipe2 = Recipe.create!(name: "Stirloin Steak", complexity: 1, genre: "Meat")
 
-    @recipe_ingredients1 = RecipeIngredients.create!(recipe: @recipe1, ingredient: @ingredient1)
-    @recipe_ingredients2 = RecipeIngredients.create!(recipe: @recipe2, ingredient: @ingredient2)
-    @recipe_ingredients3 = RecipeIngredients.create!(recipe: @recipe2, ingredient: @ingredient3)
-    @recipe_ingredients4 = RecipeIngredients.create!(recipe: @recipe2, ingredient: @ingredient4)
+    @recipe_ingredients1 = RecipeIngredient.create!(recipe: @recipe1, ingredient: @ingredient1)
+    @recipe_ingredients2 = RecipeIngredient.create!(recipe: @recipe2, ingredient: @ingredient2)
+    @recipe_ingredients3 = RecipeIngredient.create!(recipe: @recipe2, ingredient: @ingredient3)
+    @recipe_ingredients4 = RecipeIngredient.create!(recipe: @recipe2, ingredient: @ingredient4)
   end
 
   describe 'as a visitor' do
