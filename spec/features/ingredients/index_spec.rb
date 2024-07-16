@@ -8,8 +8,8 @@ RSpec.describe 'ingredients index' do
     @ingredient3 = Ingredient.create!(name: "Salt", cost: 2)
     @ingredient4 = Ingredient.create!(name: "Pepper", cost: 2)
 
-    @recipe1 = Application.create!(name: "Chicken Breast", complexity: 1, genre: "Meat")
-    @recipe2 = Application.create!(name: "Stirloin Steak", complexity: 1, genre: "Meat")
+    @recipe1 = Recipe.create!(name: "Chicken Breast", complexity: 1, genre: "Meat")
+    @recipe2 = Recipe.create!(name: "Stirloin Steak", complexity: 1, genre: "Meat")
 
     @recipe_ingredients1 = RecipeIngredients.create!(recipe: @recipe1, ingredient: @ingredient1)
     @recipe_ingredients2 = RecipeIngredients.create!(recipe: @recipe2, ingredient: @ingredient2)
